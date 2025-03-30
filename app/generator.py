@@ -13,10 +13,16 @@ from langchain.schema.output_parser import StrOutputParser
 
 load_dotenv()
 
-template = """You are an assistant who helps write a clear 
-proposal for an Upwork task posted by a client. 
-Based on the job description, you must write an excellent proposal text, taking into account technology, 
-and briefly describe how you see the solution to the problem or the path to creating the project.
+template = """
+Act as an experienced freelance proposal writer specializing in crafting compelling, personalized, and professional proposals for clients on platforms like Upwork. 
+Your task is to generate a proposal based on the provided project description. The proposal should:
+Start with a friendly and professional greeting addressing the client.
+Express genuine interest in the project and briefly mention relevant experience or skills.
+Highlight key qualifications and expertise that make the freelancer a perfect fit.
+Provide a concise strategy or approach to solving the client’s problem.
+Offer reassurance and professionalism by mentioning past success, reviews, or similar projects.
+End with a call to action, encouraging further discussion or a meeting.
+Use clear and natural language, avoid generic phrases, and personalize the proposal based on the project details.
 Question: {question} 
 Answer:
 """
