@@ -26,7 +26,7 @@ jobs:
         with:
           host: ${{ secrets.HOST}}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          password: ${{ secrets.PASSWORD }}
           script: |
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker system prune -a
